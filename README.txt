@@ -1,66 +1,27 @@
-# Welcome to p5.js
+Overview
 
-You have downloaded the complete p5.js library ZIP file, yay!
+This repository contains an interactive Sudoku game implemented in JavaScript and p5.js. The game uses a pre-loaded CSV file with various Sudoku puzzles and their solutions, enabling the user to play and interactively solve these puzzles. Besides manual interaction, there are options to view the puzzle solution, change to a different puzzle, reset the current puzzle, or validate the user's solution.
 
-# Contents of the p5 folder
+Features
 
-* p5.js file
-* p5.min.js file
-* addons folder
-  * p5.sound.js
-  * p5.sound.min.js
-* empty-example folder
-  * index.html
-  * p5.js
-  * p5.sound.js
-  * sketch.js
+ Sudoku Grid
 
-## p5.js
+ The game features a 9x9 Sudoku grid rendered on an HTML canvas, mimicking the traditional Sudoku game board. Each cell in the grid can contain a digit from 1 to 9, or it can be left empty (denoted by 0) for the player to fill.
 
-This file stores the complete p5.js library. It is easy to read by humans, so feel free to open it and explore its contents. It also has a friendly error system, which helps new programmers with common user errors.
+ CSV-based Puzzles
 
-## p5.min.js
+ The game reads a CSV file containing multiple Sudoku puzzles and their respective solutions. Each puzzle can be accessed sequentially by the player, creating a diverse gaming experience.
 
-This file is a minified version of the p5.js file. It is a lighter version, with the same functionalities, but smaller file size. This minified version is harder to read for humans, and does not include the friendly error system.
+ User Interaction
 
-## addons folder
+ The player can fill any empty cell on the board by clicking it and pressing a number key. There is also visual feedback for selected cells to enhance the user experience.
 
-The addons folder includes additional p5.js related libraries, in both original versions and minified versions.
+ Puzzle Navigation
 
-### p5.sound.js, p5.sound.min.js
+ Buttons are provided to navigate between different puzzles. The player can move to the next or previous puzzle, or reset the current puzzle to its initial state.
 
-p5.sound extends p5.js with Web Audio functionality including audio input, playback, analysis, and synthesis.
+ Solution Checking & Display
 
-## empty-example folder
+ Players can check their solution against the preloaded correct one at any point in the game. If the solution is incorrect, an alert message will appear. On completing a puzzle correctly, the player receives a congratulatory message.
 
-This is an empty example of a website. The folder includes the file for the website, index.html, the p5.js library, other related p5.js libraries, and a template starting point for your p5.js sketch, called sketch.js.
-
-### index.html
-
-index.html is a template for an HTML file. This index.html first imports the libraries included in the folder (p5.js, p5.sound.js) then loads and executes the file sketch.js which is where you can write your own code.
-
-### sketch.js
-
-The sketch.js is a template for the p5.js sketch, with the functions setup() and draw() that you can complete.
-
-## README.txt
-
-This README file formatted with Markdown :)
-
-# What's next?
-
-If you need more information to help get you started, please refer to our website:  
-https://p5js.org/get-started/ and https://p5js.org/learn/
-
-An online reference to the p5.js library is available here:  
-https://p5js.org/reference/
-
-In order to run your website (including the empty-example), you need to enable a local server, please see this tutorial in our wiki:  
-https://github.com/processing/p5.js/wiki/Local-server
-
-p5.js is a community and p5.js is built by contributions. If you want to learn more about us, visit:  
-https://p5js.org/community/
-
-# License
-
-The p5.js library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 2.1.
+ Furthermore, the player can view the correct solution by clicking the 'Show Solution' button. This feature is particularly useful for players who want to verify their answer or see the correct solution for a puzzle they find too difficult.
